@@ -4,11 +4,29 @@
 <head>
     <meta charset="UTF-8"/>
     <title>Title</title>
+    <link href="../../static/css/style.css" th:href="@{/css/style.css}" rel="stylesheet" type="text/css" media="all" />
 </head>
 <body>
+<div th:include="fragments::navbar"></div>
+<p>
+    Name:
+</p>
 <p th:text="${summoner.name}">
 </p>
+<p>
+    Id:
+</p>
 <p th:text="${summoner.id}">
+</p>
+<p>
+  Profilbild:
+</p>
+<img th:src="@{'/images/test/profileIcon' + ${summoner.profileIconId} + '.jpg'}"/>
+<p th:text="${summoner.profileIconId}">
+
+</p>
+<p>
+    SummonerLevel:
 </p>
 <p th:text="${summoner.summonerLevel}">
 </p>

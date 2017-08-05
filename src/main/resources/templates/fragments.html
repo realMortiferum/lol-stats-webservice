@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      th:include="layouts/default">
+<head>
+    <meta charset="UTF-8"/>
+    <title th:fragment="title">Product</title>
+    <link href="../../static/css/style.css" th:href="@{/css/style.css}" rel="stylesheet" type="text/css" media="all"/>
+</head>
+<body>
+<div th:fragment="navbar">
+    <ul class="navbar-ul">
+        <li class="navbar-li">
+            <a th:href="@{/}">
+                    <img id="logo" th:src="@{/images/icon.png}" th:href="@{/}"/>
+            </a>
+        </li>
+        <form class="navbar-search" th:action="@{/summoner}" method="GET">
+            <input type="text" name="name" value=""/>
+            <input type="submit"/>
+        </form>
+    </ul>
+</div>
+</body>
+</html>

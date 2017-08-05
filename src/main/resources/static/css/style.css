@@ -1,0 +1,24 @@
+.navbar-ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: dodgerblue;
+    height: 50px;
+}
+.navbar-li{
+    float: left;
+    margin-left: 10%;
+    margin-top: 5px;
+}
+
+.navbar-search{
+    float: right;
+    margin-top: 15px;
+    margin-right: 10%;
+}
+
+#logo{
+    height: 40px;
+    margin-top: 0px !important;
+}
