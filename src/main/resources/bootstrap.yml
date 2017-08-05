@@ -1,0 +1,7 @@
+server:
+  port: 8080
+lol:
+  api:
+    host:
+      euw1: https://euw1.api.riotgames.com/lol/
+    key: RGAPI-ccf9d978-59b9-4092-8dc5-f51131ac888c
